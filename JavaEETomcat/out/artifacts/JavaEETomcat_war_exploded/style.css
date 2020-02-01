@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+.red {
+    margin: 0 auto;
+    width: 650px;
+    color: #D22;
+}
+.blue {
+    font-weight: bold;
+    color: #22F;
+    background-color: #DCE2EE;
+}
+table {
+    margin: 0 auto;
+    width: 650px;
+    border: 1px solid #DCE2EE;
+}
+table tr td {
+    padding: 4px;
+}
+.left {
+    width: 120px;
+    text-align: right;
+}
+.center {
+    width: 162px;
+}
+.right {
+    padding: 10px;
+    width: 300px;
+    background-color: #F2F2F2;
+}
+input {
+    width: 160px;
+    height: 22px;
+    margin: 2px;
+    border: 1px solid #999;
+    outline: none;
+    background-color: #F5F5F5;
+}
+a {
+    color: #22F;
+}
+.normal {
+    font-weight: normal;
+}
+hr {
+    border: 1px solid #DCE2EE;
+}
+.tocenter {
+    text-align: center;
+}
+.submit {
+    width: 100px;
+    height: 32px;
+    background-color: #2C3;
+    color: #FFF;
+    font-weight: bold;
+    border: 0;
+}
+.user_img {
+    width: 150px;
+    height: 150px;
+}
+
+
+/*教务系统拷贝来的*/
+
+/* ONEK.CN */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li,
+pre,
+form, fieldset, legend, button, input, textarea
+{margin:0px;padding:0px;}
+fieldset, img {border:0;}
+li {list-style:none;}
+body,button, input, select, textarea /* for ie */ {font: 78%/1.5 tahoma,Helvetica,arial, "\5b8b\4f53", sans-serif;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd,samp { font-family: courier new, courier, monospace; }
+
+ins {text-decoration:none;}
+del {text-decoration:line-through;}
+h1 {font-size: 2em;}
+h2 {font-size: 1.7em;}
+h3 {font-size: 1.5em;}
+
+a{ text-decoration: none; }
+a:hover{ text-decoration: underline; }
+html{color:#000;background:#FFF;}
+
+
+
+/*左右*/
+.fl{ float:left;}
+.fr{ float:right;}
+
+
+/*字体大小*/
+.f12{ font-size:12px;}
+
+
+.block{ display:block;}
+.clear{ clear:both;}
+.clear_all{ clear:both; height:0; line-height:0;}
+
+.mainbody{
+	background-image: url(./images/wallhaven-601528.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-color:#FFF;
+}
+
+.header{
+	width:960px;
+	height:130px;
+	margin:0 auto 0 auto;
+	position:relative;
+	font-size:30px;
+	color:#FFF;
+	padding-top:30px;
+	font-family:"微软雅黑";
+	background:url(./images/wallhaven-601528.jpg) no-repeat top;
+}
+
+
+.banner{
+	width:950px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+	}
+
+.menu_left{
+	text-align: left;
+	padding:15px 10px;
+	}
+
+.menu_left dt{
+	height:38px;
+	line-height:35px;
+	font-size:16px;
+	font-weight:bold;
+	color: #F00;
+}
+.menu_left dd{
+	line-height:25px;
+}
+
+.box{
+	width:950px;
+	margin:0 auto 0 auto;
+	}
+.w_220{ width:220px;}	
+.w_720{ width:720px;}	
+
+
+.f_1{ border:1px solid #E9E9E9; border-top:none; overflow:hidden;}
+.f_1_a{ border:1px solid #E9E9E9;}
+
+
+
+
+.t_1{
+	height:35px;
+	line-height:35px;
+	background-color: #39F;
+	padding-right:10px;
+}
+.t_1 div{
+	background-color: #2C3 ;
+	position:relative;
+	height:35px;
+	line-height:35px;
+	}
+	
+	
+.t_1 h3{
+	float:left;
+	margin-right:10px;
+	width:130px;
+	text-align:center;
+	color:#FFF;
+	font-size:14px;
+}
+.t_1 span{ color:#999999; font-size:12px; font-family:Verdana, Geneva, sans-serif; font-weight:bold;}
+
+.t_1 h3 a{ color:#FFF;}
+
+.table{ margin-top:20px;}
+.tdc1{ background-color:#39F;text-align:center;height: 100px;}
+.tdc1 a{ color:#FFF;}
+.tdc2{ background-color: #3CC; text-align:center;}
+.tdc2 a{ color:#FFF;}
+.apic img{height: 90px;width: 150px; }
+
+
+ul#navigation li a {
+    display: block;
+    margin-left: -85px;
+    width: 100px;
+    height: 70px;
+    background-color:#CFCFCF;
+    background-repeat:no-repeat;
+    background-position:center center;
+    border:1px solid #AFAFAF;
+    -moz-border-radius:0px 10px 10px 0px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-top-right-radius: 10px;
+    opacity: 0.6;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+ul#navigation .home a{
+    background-image: url(./images/earth.jpg);
+    background-size: 100%;
+}
+ul#navigation .about a      {
+    background-image: url(./images/Mars.jpg);
+    background-size: 100%;
+}
+ul#navigation .search a      {
+    background-image: url(./images/muxk.jpg);
+    background-size: 100%;
+}
+ul#navigation .podcasts a      {
+    background-image: url(./images/木星.jpg);
+    background-size: 100%;
+}
+ul#navigation .rssfeed a   {
+    background-image: url(./images/金星.jpg);
+    background-size: 100%;
+}
+ul#navigation .photos a     {
+    background-image: url(./images/sun.jpg);
+    background-size: 100%;
+}

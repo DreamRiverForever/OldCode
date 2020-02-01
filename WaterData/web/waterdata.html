@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
+  <title></title>
+    <link href="assets/css/icons.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="js/html5shiv.min.js"></script>
+          <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="sticky-header">
+
+
+    <!--Start left side Menu-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo-->
+        <div class="logo">
+            <a href="index.jsp"><img src="assets/images/logo.png" alt=""></a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="index.jsp"><img src="assets/images/logo-icon.png" alt=""></a>
+        </div>
+        <!--logo-->
+
+        <div class="left-side-inner">
+            <!--Sidebar nav-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li class="menu-list"><a href="index.jsp"><i class="icon-home"></i> <span>数据集</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="DataReceive"> 原始数据</a></li>
+                        <li><a href="WaterDataReceive"> 水印数据</a></li>
+                    </ul>
+                </li>
+
+
+
+                <li class="menu-list"><a href="#"><i class="icon-grid"></i> <span>A设备数据处理</span></a>
+                    <ul class="sub-menu-list">
+                        <li ><a href="table-responsive.html">数据分析</a></li>
+                        <li><a href="table-datatable.html">水印嵌入</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="menu-list nav-active"><a href="#"><i class="icon-lock"></i> <span>B设备数据处理</span></a>
+                    <ul class="sub-menu-list">
+                        <li class="active"><a href="waterdata.html"> 数据分析 </a></li>
+                        <li><a href="extractwater.jsp"> 水印提取 </a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+            <!--End sidebar nav-->
+
+        </div>
+    </div>
+    <!--End left side menu-->
+
+    
+    <!-- main content start-->
+    <div class="main-content" >
+
+        <!-- header section start-->
+        <div class="header-section">
+
+            <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+
+            <form class="searchform">
+                <input type="text" class="form-control" name="keyword" placeholder="Search here..." />
+            </form>
+
+            <!--notification menu start -->
+
+            <!--notification menu end -->
+
+        </div>
+        <!-- header section end-->
+
+
+
+        <!--body wrapper start-->
+        <div class="wrapper">
+              
+          <!--Start Page Title-->
+           <div class="page-title-box">
+                <h4 class="page-title">数据处理</h4>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="#">数据分析</a>
+                    </li>
+                    <li class="active">
+                        水印提取
+                    </li>
+                </ol>
+                <div class="clearfix"></div>
+             </div>
+              <!--End Page Title-->
+
+
+            <!-- Start row-->
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="white-box">
+                        <h2 class="header-title">身高区间人数</h2>
+                        <div class="canvas-chart">
+                            <canvas id="lineChart" height="140"></canvas>
+                        </div>
+                    </div>
+                </div><!-- /col-md-6-->
+
+                <div class="col-md-6">
+                    <div class="white-box">
+                        <h2 class="header-title">身体健康状况比例</h2>
+                        <div class="canvas-chart">
+                            <canvas id="barChart" height="140"></canvas>
+                        </div>
+                    </div>
+                </div><!-- /col-md-6-->
+
+            </div>
+            <!-- End row-->
+
+            <!-- Start row-->
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="white-box">
+                        <h2 class="header-title">各状态人数</h2>
+                        <div class="canvas-chart">
+                            <canvas id="polarChart" height="140"></canvas>
+                        </div>
+                    </div>
+                </div><!-- /col-md-6-->
+
+
+                <div class="col-md-6">
+                    <div class="white-box">
+                        <h2 class="header-title">学生状态统计</h2>
+                        <div class="canvas-chart">
+                            <canvas id="pieChart" height="140"></canvas>
+                        </div>
+                    </div>
+                </div><!-- /col-md-6-->
+
+                <div class="col-md-12">
+                    <div class="white-box">
+                        <h2 class="header-title">数据对比</h2>
+                        <div class="table-wrap">
+                            <table class="table table-striped" id="tb">
+                                <thead>
+                                <tr>
+                                    <th>原平均身高</th>
+                                    <th>平均身高</th>
+
+
+                                    <th>原均方差</th>
+                                    <th>均方差</th>
+
+
+                                    <th>原平均体重</th>
+                                    <th>平均体重</th>
+
+
+                                    <th>原均方差</th>
+                                    <th>均方差</th>
+
+
+
+
+
+
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div><!-- /col-md-6-->
+
+
+            </div>
+            <!-- End row-->
+               
+			    </div>
+        <!-- End Wrapper-->
+
+
+        <!--Start  Footer -->
+        <footer class="footer-main">let it go 邓玉文 胡世豪 陈艳瑜<a target="_blank" href="http://sc.chinaz.com/moban/"></a></footer>
+         <!--End footer -->
+
+       </div>
+      <!--End main content -->
+    
+
+
+    <!--Begin core plugin -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/moment/moment.js"></script>
+    <script  src="assets/js/jquery.slimscroll.js "></script>
+    <script src="assets/js/jquery.nicescroll.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <!-- End core plugin -->
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="assets/plugins/chart-js/Chart.js"></script>
+    <script src="assets/pages/chartjs-custom2.js"></script>
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+</body>
+
+</html>

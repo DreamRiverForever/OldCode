@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="CookieDemo:war exploded">
+    <output-path>D:/apache-tomcat-8.5.37/webapps/CookieDemo</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="CookieDemo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="CookieDemo" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

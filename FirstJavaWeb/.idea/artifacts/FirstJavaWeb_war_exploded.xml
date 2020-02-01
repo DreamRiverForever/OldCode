@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="FirstJavaWeb:war exploded">
+    <output-path>D:/apache-tomcat-8.5.37/webapps/FirsrJavaWeb</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="FirstJavaWeb/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="FirstJavaWeb" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

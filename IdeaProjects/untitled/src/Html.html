@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>你好文字矩阵</title>
+    <meta name="keyword" content="关键字，关键码">
+    <meta name="description" content="描述信息">
+</head>
+<body>
+<canvas width="500" height="500" style="background: black;" id="canvas"></canvas>
+<script >
+	var canvas=document.getElementById("canvas");
+	var ctx=canvas.getContext("2d");
+	var s=window.screen;
+	var w=s.width;
+	var h=s.height;
+	canvas.width=w;
+	canvas.height=h;
+	var fontsize=14;
+	var clos=Math.floor(w/fontsize);
+	var drops=[];
+	var str="AbCdEfGhIjKlMnOpQrStUvWxYz";
+	for(var i=0;i<clos;i++)
+		drops.push(0);
+	function drawString()
+	{
+	ctx.fillStyle="rgba(0,0,0,0.05)";
+    ctx.fillRect(0,0,w,h);
+	ctx.font="600"+fontsize+"微软雅黑";
+	ctx.fillStyle=rgbacolor();//绿#0aed43  #99ccff
+	for (var i = 0; i<clos; i++)
+	   {
+		var x=i*fontsize;
+		var y=drops[i]*fontsize;
+        ctx.fillText(str[Math.floor(Math.random()*24)],x,y);
+        if (y>h&&Math.random()>0.99) {drops[i]=0;}
+        drops[i]++;
+	   }
+    }
+    setInterval(drawString,30);
+    function rgbacolor()
+    {
+    	var r=Math.floor(Math.random()*256);
+    	var g=Math.floor(Math.random()*256);
+    	var b=Math.floor(Math.random()*256);
+    	return "rgb("+r+","+g+","+b+")"
+
+    }
+
+</script>
+</body>
+</html>
